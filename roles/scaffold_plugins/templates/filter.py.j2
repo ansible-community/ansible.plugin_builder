@@ -16,10 +16,11 @@ DOCUMENTATION = """
 """
 
 EXAMPLES = """
+{{ examples|d('') }}
 """
 
 from ansible.errors import AnsibleFilterError
-from ansible_collections.{{ collection.namespace }}.{{ collection.name }}.plugins.module_utils.common.{{ plugin.name }} import (
+from ansible_collections.{{ collection.namespace }}.{{ collection.name }}.plugins.plugin_utils.{{ plugin.name }} import (
     {{ plugin.name }},
 )
 from ansible_collections.ansible.utils.plugins.module_utils.common.argspec_validate import (
